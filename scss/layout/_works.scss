@@ -1,0 +1,93 @@
+.works {
+    .container {
+        margin-bottom: 15rem;
+
+
+    }
+    &__title {
+        font-weight: 400;
+        font-size: $h3-size;
+        line-height: $h3-line;
+        margin-bottom: 2rem;
+        @include responsive(phone) {
+         width: 100%;   
+         text-align: center;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        hr {
+            margin: 2rem 0rem;
+            color: $color-dark;
+           
+        }
+        hr:not(:first-child) {
+            @include responsive(phone) {
+                display: none;
+                }
+
+        }
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        gap:1.8rem ;
+        @include responsive(phone) {
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            
+        }
+        img {
+            @include responsive(phone) {
+                width: 100%;
+                height: auto;
+
+                
+            }
+            
+        }
+       
+        h1 {
+            font-size: $works-h1-size;
+            line-height: $works-h1-line-height;
+            margin-bottom: 2rem;
+        }
+        
+        h3 {
+            font-size: $h4-size;
+            width: 6.2rem;
+            height: 2.5rem;
+            text-align: center;
+            border-radius: 1.6rem;
+            font-weight: 900;
+            background-color: $color-dark-bg;
+            color: $color-bg;
+        }
+        h4 {
+            font-size: $works-h4-size;
+            line-height: $works-line-height;
+            color: $light;
+            font-weight: 400;
+        }
+        .time {
+            display: flex;
+            align-items: center;
+            gap: 2.6rem;
+            margin-bottom: 1.7rem;
+
+        }
+    }
+    &__item:not(:first-child) {
+        @include responsive(phone) {
+            display: none;
+        }
+
+    }
+    &__item-definition {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+}

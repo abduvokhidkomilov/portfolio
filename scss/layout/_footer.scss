@@ -1,0 +1,24 @@
+.footer {
+    .container {
+        text-align: center;
+
+    }
+    &__wrapper {
+        padding: 5.4rem 0px;
+    }
+    &__icon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3.5rem;
+        margin-bottom: 2.6rem;
+        path {
+            fill: $color-dark;
+        }
+        a:hover path{
+            fill: $color-primary;
+            
+        }
+    }
+}

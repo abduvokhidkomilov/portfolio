@@ -1,0 +1,61 @@
+.header{
+    margin-top: 1rem;
+    position: relative;
+    .container{
+        max-width: 980px;
+        margin: 0px auto;
+        height: 4.3rem;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 14rem;
+    }
+    .navbar {
+        display: flex;
+        justify-content: flex-end;
+        gap: 3.3rem;
+        @include responsive(phone){
+            display: none;
+           
+        }
+        a{
+            @extend %ancer
+
+        }
+        a:hover {
+            color: $color-primary;
+        }
+        .hidden {
+            display: block;
+            @include responsive(phone) {
+
+                position:absolute;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                top: 5rem;
+                background-color: #fff;
+                height: 90vh;
+            }
+        }
+    }
+    &__hamburger {
+        display: none;
+        @include responsive(phone){
+            display: block;
+            
+        }
+    }
+         
+        
+      
+      
+    
+    &__hamburger{
+        @include responsive(phone){
+            position: fixed;
+            
+        }
+      
+    }
+}

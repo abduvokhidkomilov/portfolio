@@ -1,0 +1,67 @@
+.hero {
+    .container {
+        
+        width: $container;
+        display: flex;
+        justify-content: space-between;
+        height: auto;
+        gap: 11rem;
+        margin-bottom: 7.1rem;
+        @include responsive(tablet) {
+            width: 100%;
+            gap: 1rem;
+        }
+        @include responsive(phone) {
+            width: 100%;
+            gap: 3rem;
+            flex-direction: column-reverse;
+        }
+    }
+    &__wrapper {
+
+        @include responsive(tablet) {
+        }
+        @include responsive(phone) {
+            width: 100%;
+            text-align: center;
+        }
+        h1 {
+            font-size: $h1-size;
+            line-height: $h1-line;
+            margin-bottom: 4rem;
+        }
+        p {
+            margin-bottom: 3.8rem;
+        }
+        a {
+            padding: 17px 24px;
+            background-color: $color-primary;
+            border-radius: 2px;
+        }
+
+    }
+    .img__wrapper {
+        text-align: center;
+        position: relative;
+        .bg__aqua {
+            position: absolute;
+            bottom: 4rem;
+            right: .4rem;
+            width: 24.3rem;
+            height: 24.3rem;
+            border-radius: 50%;
+            background-color: #EDF7FA;
+            @include responsive(tablet) {
+            }
+            @include responsive(phone) {
+               
+            }
+
+        }
+        img {
+            position: relative;
+            z-index: 100;
+        }
+    }
+
+}
