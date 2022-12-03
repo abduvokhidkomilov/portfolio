@@ -68,7 +68,7 @@
             .date {
                 display: flex;
                 gap: 2.4rem;
-            }
+                
             span {
                 width: 1px;
                 height: 21px;
@@ -98,6 +98,7 @@
                     line-height: $text-line;
                 }
             }
+        }
         }
 
         

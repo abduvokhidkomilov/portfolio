@@ -9,8 +9,14 @@
         justify-content: flex-end;
         align-items: center;
         margin-bottom: 14rem;
+        &__blog {
+            margin-bottom: 10.6rem;
+            @include responsive(phone) {
+                margin-bottom: 2.4rem;
+            }
+        }
     }
-    .navbar {
+     .navbar {
         display: flex;
         justify-content: flex-end;
         gap: 3.3rem;

@@ -1,0 +1,104 @@
+.works-definition__list {
+    width: 681px;
+    margin: auto;
+    margin-bottom: 12rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2.7rem;
+    @include responsive(phone) {
+        width: 100%;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+       
+
+    }
+    a {
+           color: $color-dark;
+            font-size: $works-h1-size;
+            line-height: $works-h1-line-height;
+            margin-bottom: 2rem;
+            font-weight: 800;   
+    }
+    .text-definition {
+        margin-bottom: 1.3rem;
+    }
+    .time {
+        display: flex;
+            align-items: center;
+            gap: 2.6rem;
+            margin-bottom: 1.7rem;
+    }
+    &__item-definition {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    .time {
+        display: flex;
+        gap: 2.4rem;
+        align-items: center;
+        height: auto;
+        
+    span {
+        width: 1px;
+        height: 21px;
+        border: none;
+        margin-bottom: 1.1rem;
+        background-color: $ancer-color;
+
+    }
+    h3 {
+        font-weight: 700;
+        font-size: $works-h4-size;
+        line-height: $works-line-height;
+        color: #fff;
+        padding: .9rem 1.8rem;
+        border-radius: 4rem;
+        background-color: $color-primary;
+        @include responsive(tablet) {
+        font-size: $h3-size;
+        line-height: $h3-line;
+        margin-bottom: 1.2rem;
+        }
+        
+    }
+    h4 {
+        font-size: $works-h4-size;
+        line-height: $works-line-height;
+        opacity: 0.5;
+        font-weight: 400;
+
+        @include responsive(phone) {
+            font-size: $text-size;
+            line-height: $text-line;
+        } } 
+    }
+    &__item-hidden {
+        display: flex;
+        align-items: center;
+        gap:1.8rem ;
+        
+        @include responsive(phone) {
+            
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            
+        }
+    }
+    img {
+        width:681px;
+        height: 46rem;
+        @include responsive(phone) {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .img-one {
+        margin-bottom: 3rem ;
+    }
+    
+}

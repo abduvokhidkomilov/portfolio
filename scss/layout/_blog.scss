@@ -1,0 +1,79 @@
+.blog  {
+    .container {
+        @include responsive(phone) {
+        padding: 0px 1.8rem;
+        }
+    }
+    &__title {
+        font-size: $h1-size;
+        margin-bottom: 5.5rem;
+        line-height: $h1-line; 
+        @include responsive(phone) {
+            font-size: $works-h1-size;
+            margin-bottom: 5.5rem;
+            line-height: 2;
+        }
+    }
+    &__list {
+        
+        h2 {
+            font-size: $works-h1-size;
+            line-height: $works-h1-line-height;
+            margin-bottom: 1.6rem;
+            @include responsive(phone) {
+                font-size: $h2-size;
+                margin-bottom: .5rem;
+                line-height: $h2-line;
+            }
+
+        }
+        .datet {
+            display: flex;
+            gap: 2.4rem;
+            align-items: center;
+            margin-bottom: 1.7rem;
+            @include responsive(phone) {
+                gap: 1.6rem;
+            }
+            
+        
+        span {
+            width: 1px;
+            height: 21px;
+            border: none;
+            margin-bottom: 1.1rem;
+            background-color: $ancer-color;
+
+        }
+        h3 {
+            font-weight: 700;
+            font-size: $h2-size;
+            line-height: $h2-line;
+            @include responsive(phone) {
+            font-size: $text-size;
+            line-height: $text-line;
+            }
+            
+        }
+        h4 {
+            font-size: $h4-size;
+            line-height: $h4-line;
+            font-weight: 400;
+            @include responsive(phone) {
+                font-size: $text-size;
+                line-height: $text-line;
+            }
+        }
+        
+    }
+    hr {
+        border-color: $light;
+        margin: 3rem 0rem;
+        border: 1px solid $light;
+        opacity: 0.3;
+        @include responsive(phone) {
+            margin: 2.1rem 0rem;
+        }
+    }
+    }
+}

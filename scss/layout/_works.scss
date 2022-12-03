@@ -1,9 +1,8 @@
 .works {
     .container {
         margin-bottom: 15rem;
-
-
-    }
+        }
+        
     &__title {
         font-weight: 400;
         font-size: $h3-size;
@@ -49,10 +48,12 @@
             
         }
        
-        h1 {
+        .text-definition {
+            color: $color-dark;
             font-size: $works-h1-size;
             line-height: $works-h1-line-height;
             margin-bottom: 2rem;
+            font-weight: 800;
         }
         
         h3 {
@@ -81,7 +82,13 @@
     }
     &__item:not(:first-child) {
         @include responsive(phone) {
-            display: none;
+        
+        }
+
+    }
+    &__item:not(:last-child) {
+        @include responsive(phone) {
+            display: block;
         }
 
     }
@@ -89,5 +96,19 @@
         width: 100%;
         height: auto;
         justify-content: center;
+    }
+    &__item-hidden {
+        display: flex;
+        align-items: center;
+        gap:1.8rem ;
+        
+        @include responsive(phone) {
+            
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            
+        }
+        
     }
 }
