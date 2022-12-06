@@ -158,11 +158,6 @@ h2 {
   justify-content: flex-end;
   gap: 3.3rem;
 }
-@media screen and (max-width: 576px) {
-  .header .navbar {
-    display: none;
-  }
-}
 .header .navbar a:hover {
   color: #FF6464;
 }
@@ -182,11 +177,6 @@ h2 {
 }
 .header__hamburger {
   display: none;
-}
-@media screen and (max-width: 576px) {
-  .header__hamburger {
-    display: block;
-  }
 }
 @media screen and (max-width: 576px) {
   .header__hamburger {
